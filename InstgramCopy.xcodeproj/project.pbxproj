@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7914CD1589C15F571E082294 /* Pods_InstgramCopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15611F36CAAFA16CB5B906AB /* Pods_InstgramCopy.framework */; };
 		D23F09D41F336EC60051AD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F09D31F336EC60051AD81 /* AppDelegate.swift */; };
 		D23F09D61F336EC60051AD81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23F09D51F336EC60051AD81 /* ViewController.swift */; };
 		D23F09D91F336EC60051AD81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23F09D71F336EC60051AD81 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12A754B6D830BF34DCCA6CA6 /* Pods-InstgramCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstgramCopy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstgramCopy/Pods-InstgramCopy.debug.xcconfig"; sourceTree = "<group>"; };
+		15611F36CAAFA16CB5B906AB /* Pods_InstgramCopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstgramCopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6AD1BEB9C45967514308C3 /* Pods-InstgramCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstgramCopy.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstgramCopy/Pods-InstgramCopy.release.xcconfig"; sourceTree = "<group>"; };
 		D23F09D01F336EC60051AD81 /* InstgramCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstgramCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23F09D31F336EC60051AD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23F09D51F336EC60051AD81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		D23F09DA1F336EC60051AD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D23F09DD1F336EC60051AD81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23F09DF1F336EC60051AD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23F09E51F336F2C0051AD81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7914CD1589C15F571E082294 /* Pods_InstgramCopy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623C9A4E6C4C537963997294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12A754B6D830BF34DCCA6CA6 /* Pods-InstgramCopy.debug.xcconfig */,
+				BC6AD1BEB9C45967514308C3 /* Pods-InstgramCopy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAC9348A8903B04ECEF0D2F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15611F36CAAFA16CB5B906AB /* Pods_InstgramCopy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D23F09C71F336EC60051AD81 = {
 			isa = PBXGroup;
 			children = (
 				D23F09D21F336EC60051AD81 /* InstgramCopy */,
 				D23F09D11F336EC60051AD81 /* Products */,
+				623C9A4E6C4C537963997294 /* Pods */,
+				AAC9348A8903B04ECEF0D2F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				D23F09DA1F336EC60051AD81 /* Assets.xcassets */,
 				D23F09DC1F336EC60051AD81 /* LaunchScreen.storyboard */,
 				D23F09DF1F336EC60051AD81 /* Info.plist */,
+				D23F09E51F336F2C0051AD81 /* GoogleService-Info.plist */,
 			);
 			path = InstgramCopy;
 			sourceTree = "<group>";
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D23F09E21F336EC60051AD81 /* Build configuration list for PBXNativeTarget "InstgramCopy" */;
 			buildPhases = (
+				1065A72C8E0C8342D3644ABF /* [CP] Check Pods Manifest.lock */,
 				D23F09CC1F336EC60051AD81 /* Sources */,
 				D23F09CD1F336EC60051AD81 /* Frameworks */,
 				D23F09CE1F336EC60051AD81 /* Resources */,
+				30FB3601F8C05D152FB035AB /* [CP] Embed Pods Frameworks */,
+				677FA6FABAE63048289089B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1065A72C8E0C8342D3644ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30FB3601F8C05D152FB035AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstgramCopy/Pods-InstgramCopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677FA6FABAE63048289089B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstgramCopy/Pods-InstgramCopy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D23F09CC1F336EC60051AD81 /* Sources */ = {
@@ -271,6 +348,7 @@
 		};
 		D23F09E31F336EC60051AD81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A754B6D830BF34DCCA6CA6 /* Pods-InstgramCopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M2HSE9ANL8;
@@ -285,6 +363,7 @@
 		};
 		D23F09E41F336EC60051AD81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6AD1BEB9C45967514308C3 /* Pods-InstgramCopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M2HSE9ANL8;
